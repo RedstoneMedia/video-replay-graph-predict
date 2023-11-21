@@ -1,0 +1,10 @@
+{
+  "train_sequence_size": 15,
+  "image_size": [128, 128],
+  "dataset_meta": {
+    "avg_duration": 643.8108504398826,
+    "max_duration": 1483.0,
+    "num_videos": 682,
+    "sequence_sample_rate": 0.2
+  }
+}
