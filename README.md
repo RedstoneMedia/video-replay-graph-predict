@@ -1,5 +1,5 @@
-# Video Highlight Finder
-This project uses a simple ML approach to predict video attention over time.
+# Video Replay Graph Predict
+This project uses a simple machine learning approach to find the most interesting moments in a video based on YouTube's "most replayed graph" data.
 
 ## Process
 Numerous videos were collected, then split into sequences of 128x128 RGB images. \
