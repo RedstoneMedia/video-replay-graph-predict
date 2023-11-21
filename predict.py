@@ -6,6 +6,8 @@ from tensorflow.keras.layers import GRU, Input
 from tensorflow.keras.utils import Sequence, load_img, img_to_array
 from tensorflow.keras.models import Model
 
+from prep_data import norm_duration
+
 import json
 import re
 import argparse
@@ -14,9 +16,6 @@ import subprocess
 
 TEMP_FRAMES_PATH = "temp_frames"
 OUT_SMOOTHING = 0.005
-
-def norm_duration(durations: np.ndarray, avg_duration: float) -> np.ndarray:
-    return durations / avg_duration
 
 def get_video_data(path: str) -> (float, float):
     probe_output_bytes = subprocess.check_output(["ffprobe", "-i", path], stderr=subprocess.STDOUT)
